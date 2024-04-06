@@ -66,5 +66,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-LOGIN_URL = '/login/login.html'
+LOGIN_URL = '/login/'
 
