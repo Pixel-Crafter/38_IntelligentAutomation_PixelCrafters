@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System - Admin Access</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            margin-left: 20px; /* Corrected the margin-left value */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #chatbox {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Panel - Employee Management System</h1>
+        <h2>Add Employee</h2>
+        <form id="employeeForm">
+            <!-- Employee details form -->
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br><br>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+            
+            <label for="bloodGroup">Blood Group:</label>
+            <input type="text" id="bloodGroup" name="bloodGroup"><br><br>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br><br>
+            
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required pattern="[0-9]+" title="Please enter only numbers"><br><br>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="experience">Past Work Experience:</label>
+            <textarea id="experience" name="experience"></textarea><br><br>
+            
+            <label for="role">Current Role:</label>
+            <input type="text" id="role" name="role" required><br><br>
+            
+            <input type="submit" value="Add Employee">
+        </form>
+        
+        <h2>Screen Monitoring</h2>
+        <!-- Placeholder for screen monitoring -->
+        <p>Screen monitoring features will be displayed here.</p>
+        
+        <h2>Leave Management</h2>
+        <!-- Placeholder for leave management -->
+        <p>Leave management features will be displayed here.</p>
+        
+        <h2>Performance Evaluation</h2>
+        <!-- Placeholder for performance evaluation -->
+        <p>Performance evaluation features will be displayed here.</p>
+        
+        <h2>Salary</h2>
+        <!-- Placeholder for salary information -->
+        <p>Salary information will be displayed here.</p>
+        
+        <h2>Reporting And Analytics</h2>
+        <!-- Placeholder for reporting and analytics -->
+        <p>Reporting and analytics features will be displayed here.</p>
+    </div>
+
+    <div id="chatbox">
+        <!-- Placeholder for chatbox -->
+        <button onclick="openChat()">Chat</button>
+    </div>
+
+    <script>
+        function openChat() {
+            // Placeholder for opening chat functionality
+            alert('Chat functionality will be implemented here.');
+        }
+    </script>
+</body>
+</html>
