@@ -1,0 +1,20 @@
+<!-- dashboard.html -->
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Dashboard</h2>
+  <p>Welcome, {{ employee.fname }} {{ employee.lname }}!</p>
+  <h3>Your Details</h3>
+  <p>Designation: {{ employee.designation }}</p>
+  <p>Team: {{ employee.team }}</p>
+  <p>Role: {{ employee.role }}</p>
+  <h3>Your Leaves</h3>
+  <ul>
+    {% for leave in leaves %}
+      <li>{{ leave.leave_type }}: {{ leave.start_date }} - {{ leave.end_date }}</li>
+    {% empty %}
+      <li>No leaves applied yet.</li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'apply_leave' %}">Apply for Leave</a>
+{% endblock %}

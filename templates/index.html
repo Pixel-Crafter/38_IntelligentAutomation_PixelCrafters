@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +39,7 @@
 <body>
     <div class="container">
         <div class="button-container">
-            <button class="login-button" onclick="location.href='admin_login.html'">Admin Login</button>
+            <button class="login-button" onclick="location.href='{% url 'admin_page' %}'">Admin Login</button>
             <button class="login-button" onclick="location.href='emp.html'">Employee Login</button>
         </div>
     </div>

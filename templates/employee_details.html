@@ -1,0 +1,32 @@
+<!-- employee_detail.html -->
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>{{ employee.fname }} {{ employee.lname }}</h2>
+  <p>Salary: {{ employee.salary }}</p>
+  <p>Joining Date: {{ employee.joining_date }}</p>
+  <p>Leaves Taken: {{ employee.leaves_taken }}</p>
+  <p>Personal Details:</p>
+  <ul>
+    <li>Date of Birth: {{ employee.dob }}</li>
+    <li>Age: {{ employee.age }}</li>
+    <li>Gender: {{ employee.gender }}</li>
+    <li>Blood Group: {{ employee.blood_group }}</li>
+  </ul>
+  <p>Contact Details:</p>
+  <ul>
+    <li>Address: {{ employee.address }}</li>
+    <li>Phone Number: {{ employee.phone_number }}</li>
+  </ul>
+  <p>Employment History:</p>
+  <ul>
+    <li>Years of Experience: {{ employee.experience }}</li>
+    <li>Previously Worked in: {{ employee.previous_company }}</li>
+  </ul>
+  <p>Current Job Information:</p>
+  <ul>
+    <li>Designation: {{ employee.designation }}</li>
+    <li>Team: {{ employee.team }}</li>
+    <li>Role: {{ employee.role }}</li>
+  </ul>
+{% endblock %}

@@ -1,0 +1,13 @@
+<!-- employee_list.html -->
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Employees</h2>
+  <ul>
+    {% for employee in employees %}
+      <li><a href="{% url 'employee_detail' employee.pk %}">{{ employee.fname }} {{ employee.lname }}</a></li>
+    {% empty %}
+      <li>No employees found.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
